@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* ===================================
+            Common-Css
+======================================*/
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+    width: 100%;
+}
+/* ===================================
+            Header-Area
+=====================================*/
+header{
+    background-color: #29259F;
+    margin-bottom: 35px;
+}
+.header-iteam{
+    display: flex;
+    justify-content: space-evenly;
+}
+.header-tittle{
+    width: 485px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+.header-tittle h1{
+    font-size: 64px;
+    font-family: poppins;
+    color: #FFFFFF;
+    line-height: 80px;
+}
+span{
+    color: pink;
+}
+.header-tittle a{
+    background-color: #E02C6D;
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 5px;
+}
+.fa-arrow-right{
+    padding-left: 10px;
+}
+.header-tittle a:hover{
+    color: #E02C6D;
+    background-color: #fff;
+    transition: 1s;
+}
+.header-image{
+    width: 556.01px;
+    height: 438px;
+    margin-top: 85px;
+    margin-bottom: 85px;
+}
+/* =================================
+        Player-Area
+====================================*/
+.player-head{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 955px;
+    background-color: #fff;
+}
+.total-player{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 90px;
+}
+.singal-player{
+    width: 260px;
+    margin: 12px;
+    border: 15px solid #fff;
+    box-shadow: 30px 30px 40px #f1f2f6;
+}
+.singal-player p{
+    font-size: 16px;
+}
+.singal-player h2{
+    color: #18191F;
+    font-size: 28px;
+    font-weight: 700;
+}
+/* =================================
+        choise-section
+====================================*/
+.player-choice{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px #f1f2f6;
+}
+.player-choice h1{
+    text-align: center;
+    padding-top: 20px;
+}
+.player-choice form{
+    padding-left: 40px;
+}
+.player-choice :last-child{
+    margin-top: 20px;
+}
+/* =================================
+        Footer-Area
+====================================*/
+.football{
+    margin-top: 100px;
+}
+.logo{
+    width: 385px;
+    margin: 0 auto;
+}
+.social-icon{
+    text-align: center;
+    color: gray;
+    margin-top: 20px;
+
+}
+.social-icon .icon{
+    background-color: #f1f2f6;
+    padding: 7px;
+    margin: 5px;
+    border-radius: 50px;
+}
+.social-icon+p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400px;
+    margin-bottom: 50px;
+}
+/* ===============================================
+                 Media -Queries
+===================================================*/
+
+/* -----------------------
+      Mobile-Size
+-------------------------*/
+@media screen and (max-width:600px) {
+    .header-image,
+    .header-tittle{
+        display: block;
+        width: 100%;
+    }
+    .header-iteam{
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    .total-player{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .singal-player{
+        width: 80%;
+    }
+    .logo{
+        width: 50%;
+    }
+}
+/* -------------------------
+        Tab-device
+----------------------------*/
+@media screen and (min-width:601px) and (max-width:1100px){
+    
+    .total-player{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .singal-player{
+        width: 80%;
+    }
+}
+
+/* =====================================================
+                       The-End
+========================================================*/
